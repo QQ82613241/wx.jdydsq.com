@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{$title}</title>
+    <!-- CSS -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="/js/jquery3.2.1.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: aliceblue;">
+    <!-- 菜单1 -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="#">51寻狗网</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Link</a>
+                    </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- 头广告 -->
+    <!-- <div class="container sticky-top" style="padding: 0px;"> -->
+    <div class="container" style="padding: 0px;">
+        <a href="/guanggao/touguanggao1.html" rel="nofollow" target="_blank">
+            <img src="https://www.jdydsq.com/images/tou1.gif" class=" d-block w-100 " style="width:100%;" alt="暖桐健康网">
+        </a>
+    </div>
+    <!-- 菜单2 -->
+    <div class="container sticky-top" style="padding: 0px;">
+        <div class=" " style="background-color:white;margin:0px">
+
+            <ul class="nav nav-tabs" style="">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link " href="#">寻狗</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active">找主人</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">狗相亲</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="color: #F23835;">发帖</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="container " style="background-color: white;margin-top: 5px;">
+        <div style="padding: 1px;">
+
+            <div class="row  justify-content-center">
+                <!-- 主体左 -->
+                <div class="col-md-11" id="newsList">
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu&nbsp;&nbsp;【找主人】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 友情链接 -->
+            <div style="color: #777;font-size: small;text-align: center;">友情链接：
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    style="color: #777;font-size: small;">诱珏两性</a>
+                | <a href="http://" target="_blank" rel="noopener noreferrer"
+                    style="color: #777;font-size: small;">诱珏两性</a>
+
+            </div>
+            <!-- 底部 -->
+            <hr>
+            <small style="color: #777;">
+                <span>51寻狗网 备案号：皖ICP备2023011700号 @ 2020-2024</span> |
+                <span>技术支持：gomeinv@outlook.com</span>
+
+            </small>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+<!-- 缩图 -->
+<!-- <script src="/js/jquery3.2.1.js"></script> -->
+<script src="/js/jqthumb/dist/jqthumb.min.js"></script>
+<script>
+    $(function () {
+        $('.suotu').jqthumb({ width: '165px', height: '129px' });
+    });
+</script>
+
+<!-- 返回顶部 -->
+<style>
+    .backToTop {
+        display: none;
+        width: 18px;
+        line-height: 1.2;
+        padding: 5px 0;
+        background-color: #000;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        position: fixed;
+        _position: absolute;
+        right: 10px;
+        bottom: 100px;
+        _bottom: "auto";
+        cursor: pointer;
+        opacity: .6;
+        filter: Alpha(opacity=60);
+    }
+</style>
+<script>
+    (function () {
+        var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+            .text($backToTopTxt).attr("title", $backToTopTxt).click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 120);
+            }), $backToTopFun = function () {
+                var st = $(document).scrollTop(), winh = $(window).height();
+                (st > 0) ? $backToTopEle.show() : $backToTopEle.hide();
+                //IE6下的定位 
+                if (!window.XMLHttpRequest) {
+                    $backToTopEle.css("top", st + winh - 166);
+                }
+            };
+        $(window).bind("scroll", $backToTopFun);
+        $(function () { $backToTopFun(); });
+    })(); 
+</script>
+<!--end 返回顶部 -->
+
+
+<!-- 无限加载 -->
+
+<script>
+
+
+    let news = `         <div>
+                        <div class="row">
+                            <div class="media">
+
+                                <div class="media-body">
+                                    <h4 class="mt-0">合肥寻狗，边牧3000,找到必酬，感谢感谢</h4>
+                                    <p>
+
+                                        <img src="https://avatar.8264.com/data/avatar/000/00/60/32_avatar_middle.jpg!w80h80?tempid=4589"
+                                            class="rounded-circle" alt="..." style="width: 25px;height: 25px;">
+                                        <small style="color: #777;">2024-4-10 by 小狗mumu小狗mumu小狗mumu【寻狗】【合肥】【边牧】</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="line-height: 200%;margin-left: 1px">
+
+                            西安 |
+                            初见乍惊欢，久处亦怦然这座城，回荡着大汉王朝的金戈铁马这座城，延续着隋唐盛世的海纳百川即使在飞速发展的现在她一天天变幻着模样但静静伫立了千年的城墙、佛塔、园林剥落了鲜艳外衣的雕梁画栋，依旧清晰这就是
+
+
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu" src="https://www.jdydsq.com/uploads/thumb/20240602220329933792.jpg">
+
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="https://www.jdydsq.com/kindeditor/php/image/20220602/20220602163822_73915.jpg">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                            <span style="margin-right: 3px;margin-bottom: 3px; ">
+
+                                <img class="suotu"
+                                    src="http://image1.8264.com/wen/public/20240529/1716968807812.jpg!w175h131">
+                            </span>
+                        </div>
+                        <hr>
+                    </div>` ;
+
+    // 绑定上拉加载更多事件
+    $(window).on('scroll', function () {
+        // 当滚动到页面底部时
+        if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+
+            $('#newsList').append(`${news}`);
+            // $('.suotu').jqthumb({ width: '165px', height: '129px' });
+            // // 显示加载更多动画
+            // $('#loading').show();
+
+            // // 发送异步请求获取下一页数据
+            // $.ajax({
+            //     url: 'loadmore.php',
+            //     method: 'GET',
+            //     dataType: 'json',
+            //     success: function (data) {
+            //         // 渲染下一页数据
+            //         appendData(data);
+
+            //         // 隐藏加载更多动画
+            //         $('#loading').hide();
+            //     }
+            // });
+        }
+    });
+</script>
