@@ -15,4 +15,9 @@ class Content extends BaseController
         ]);
         return View::fetch();
     }
+
+
+    function item() {
+    
+    }
 }
