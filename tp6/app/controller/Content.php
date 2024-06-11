@@ -17,7 +17,5 @@ class Content extends BaseController
     }
 
 
-    function item() {
-    
-    }
+ 
 }
